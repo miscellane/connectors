@@ -74,8 +74,6 @@
             initCallback();
             tableau.submit();
         };
-
-
     });
 
 })();
