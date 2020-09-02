@@ -5,27 +5,32 @@
         var cols = [{
             id: "datetimeobject",
             alias: "date",
+            description: "COVID Tracking Project data date",
             dataType: tableau.dataTypeEnum.date
         }, {
             id: "STUSPS",
+            description: "The two letter code of a United States state or territory",
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "positiveIncrease",
             alias: "Positive Cases",
+            description: "Daily positives",
             dataType: tableau.dataTypeEnum.int
         }, {
             id: "testIncrease",
             alias: "Tests",
+            description: "Daily tests",
             dataType: tableau.dataTypeEnum.int
         }, {
             id: "deathIncrease",
             alias: "Deaths",
+            description: "Daily deaths",
             dataType: tableau.dataTypeEnum.int
         }];
 
         var tableSchema = {
             id: "increasesFeed",
-            alias: "The daily number of positive cases, tests, and deaths.",
+            alias: "Increases Feed",
             columns: cols
         };
 
