@@ -1,0 +1,18 @@
+
+body {
+    font-family: Gafata, Arial, Helvetica, sans-serif; /* Sans-serif */
+    margin: 0;
+    font-size: 13px;
+}
+
+.header {
+    padding: 40px; /* padding */
+    text-align: center; /* centre the text */
+    background: #191919; /* black background */
+    color: white; /* white text */
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
