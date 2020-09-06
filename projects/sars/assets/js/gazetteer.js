@@ -55,7 +55,7 @@
 
 
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON("https://raw.githubusercontent.com/briefings/sars/develop/fundamentals/atlantic/warehouse/gazetter.json", function(data) {
+        $.getJSON("https://raw.githubusercontent.com/briefings/sars/develop/fundamentals/atlantic/warehouse/gazetteer.json", function(data) {
 
             // Placeholder
             var tableData = [],
