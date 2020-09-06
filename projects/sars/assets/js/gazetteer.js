@@ -14,6 +14,7 @@
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "STUSPS",
+            alias: "U.S. Postal Service State Code",
             description: "The two letter code of a United States state or territory",
             dataType: tableau.dataTypeEnum.string
         }, {
