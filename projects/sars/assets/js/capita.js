@@ -6,7 +6,7 @@
             id: "datetimeobject",
             alias: "date",
             description: "COVID Tracking Project data date",
-            dataType: tableau.dataTypeEnum.date
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "STUSPS",
             description: "The two letter code of a United States state or territory",
