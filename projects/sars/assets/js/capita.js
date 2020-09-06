@@ -46,7 +46,7 @@
 
         var tableSchema = {
             id: "capitaFeed",
-            alias: "Atlantic Capita Feed",
+            alias: "Capita Feed",
             columns: cols
         };
 
