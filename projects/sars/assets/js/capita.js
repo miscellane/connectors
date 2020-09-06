@@ -67,9 +67,12 @@
                 tableData.push({
                     datetimeobject: data[i][0],
                     STUSPS: data[i][1],
-                    positiveIncrease: data[i][2],
-                    testIncrease: data[i][3],
-                    deathIncrease: data[i][4]
+                    positiveRate: data[i][2],
+                    testRate: data[i][3],
+                    deathRate: data[i][4],
+                    hospitalizedRate: data[i][5],
+                    ndays: data[i][6],
+                    label: data[i][7]
                 });
             }
 
