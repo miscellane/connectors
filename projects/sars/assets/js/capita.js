@@ -12,21 +12,37 @@
             description: "The two letter code of a United States state or territory",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "positiveIncrease",
-            alias: "Positive Cases",
-            description: "Daily positives",
-            dataType: tableau.dataTypeEnum.int
+            id: "positiveRate",
+            alias: "Positive/100k",
+            description: "Cumulative positive cases per 100k",
+            dataType: tableau.dataTypeEnum.float
         }, {
-            id: "testIncrease",
-            alias: "Tests",
-            description: "Daily tests",
-            dataType: tableau.dataTypeEnum.int
+            id: "testRate",
+            alias: "Tests/100k",
+            description: "Cumulative tests per 100k",
+            dataType: tableau.dataTypeEnum.float
         }, {
-            id: "deathIncrease",
-            alias: "Deaths",
-            description: "Daily deaths",
-            dataType: tableau.dataTypeEnum.int
-        }];
+            id: "deathRate",
+            alias: "Deaths/100k",
+            description: "Cumulative deaths per 100k",
+            dataType: tableau.dataTypeEnum.float
+        }, {
+            id: "hospitalizedRate",
+            alias: "Hospitalized/100k",
+            description: "Cumulative hospitalisations per 100k",
+            dataType: tableau.dataTypeEnum.float
+        }, {
+            id: "ndays",
+            alias: "Days",
+            description: "Days thus far",
+            dataType: tableau.dataTypeEnum.float
+        }, {
+            id: "label",
+            alias: "Label",
+            description: "Label",
+            dataType: tableau.dataTypeEnum.float
+        }
+        ];
 
         var tableSchema = {
             id: "increasesFeed",
@@ -39,7 +55,7 @@
 
 
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON("https://raw.githubusercontent.com/briefings/sars/develop/fundamentals/atlantic/warehouse/increases.json", function(data) {
+        $.getJSON("https://raw.githubusercontent.com/briefings/sars/develop/fundamentals/atlantic/warehouse/capita.json", function(data) {
 
             // Placeholder
             var tableData = [],
