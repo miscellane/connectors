@@ -45,8 +45,8 @@
         ];
 
         var tableSchema = {
-            id: "increasesFeed",
-            alias: "Increases Feed",
+            id: "capitaFeed",
+            alias: "Atlantic Capita Feed",
             columns: cols
         };
 
@@ -82,7 +82,7 @@
 
     $(document).ready(function () {
         $("#submitButton").click(function () {
-            tableau.connectionName = "Increases Feed";
+            tableau.connectionName = "Capita Feed";
             tableau.submit();
         });
 
