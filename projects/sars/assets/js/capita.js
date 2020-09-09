@@ -13,24 +13,29 @@
             description: "The two letter code of a United States state or territory",
             dataType: tableau.dataTypeEnum.string
         }, {
+            id: "deathRate",
+            alias: "Deaths/100k",
+            description: "Cumulative, and unique, deaths per 100k",
+            dataType: tableau.dataTypeEnum.float
+        }, {
             id: "positiveRate",
             alias: "Positive/100k",
-            description: "Cumulative positive cases per 100k",
+            description: "Positive cases thus far per 100k",
             dataType: tableau.dataTypeEnum.float
         }, {
             id: "testRate",
             alias: "Tests/100k",
             description: "Cumulative tests per 100k",
             dataType: tableau.dataTypeEnum.float
-        }, {
-            id: "deathRate",
-            alias: "Deaths/100k",
-            description: "Cumulative deaths per 100k",
+        },  {
+            id: "icuRate",
+            alias: "ICU Patients/100k",
+            description: "Cumulative, and unique, ICU patients per 100k",
             dataType: tableau.dataTypeEnum.float
-        }, {
+        },{
             id: "hospitalizedRate",
             alias: "Hospitalized/100k",
-            description: "Cumulative hospitalisations per 100k",
+            description: "Cumulative, and unique, hospitalisations per 100k",
             dataType: tableau.dataTypeEnum.float
         }, {
             id: "ndays",
@@ -68,12 +73,13 @@
                 tableData.push({
                     datetimeobject: data[i][0],
                     STUSPS: data[i][1],
-                    positiveRate: data[i][2],
-                    testRate: data[i][3],
-                    deathRate: data[i][4],
-                    hospitalizedRate: data[i][5],
-                    ndays: data[i][6],
-                    label: data[i][7]
+                    deathRate: data[i][2],
+                    positiveRate: data[i][3],
+                    testRate: data[i][4],
+                    icuRate: data[i][5],
+                    hospitalizedRate: data[i][6],
+                    ndays: data[i][7],
+                    label: data[i][8]
                 });
             }
 
