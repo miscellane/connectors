@@ -42,11 +42,6 @@
             alias: "Days",
             description: "Days thus far",
             dataType: tableau.dataTypeEnum.float
-        }, {
-            id: "label",
-            alias: "Label",
-            description: "Label",
-            dataType: tableau.dataTypeEnum.float
         }
         ];
 
@@ -78,8 +73,7 @@
                     testRate: data[i][4],
                     icuRate: data[i][5],
                     hospitalizedRate: data[i][6],
-                    ndays: data[i][7],
-                    label: data[i][8]
+                    ndays: data[i][7]
                 });
             }
 
