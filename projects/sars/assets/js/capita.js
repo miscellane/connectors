@@ -4,7 +4,7 @@
     myConnector.getSchema = function (schemaCallback) {
         var cols = [{
             id: "datetimeobject",
-            alias: "date",
+            alias: "Date",
             description: "COVID Tracking Project data date",
             dataType: tableau.dataTypeEnum.string
         }, {
@@ -14,27 +14,27 @@
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "deathRate",
-            alias: "Deaths/100k",
+            alias: "Deaths/100k [C]",
             description: "Cumulative, and unique, deaths per 100k",
             dataType: tableau.dataTypeEnum.float
         }, {
             id: "positiveRate",
-            alias: "Positive/100k",
+            alias: "Positive/100k [C]",
             description: "Positive cases thus far per 100k",
             dataType: tableau.dataTypeEnum.float
         }, {
             id: "testRate",
-            alias: "Tests/100k",
+            alias: "Tests/100k [C]",
             description: "Cumulative tests per 100k",
             dataType: tableau.dataTypeEnum.float
         },  {
             id: "icuRate",
-            alias: "ICU Patients/100k",
+            alias: "ICU Patients/100k [C]",
             description: "Cumulative, and unique, ICU patients per 100k",
             dataType: tableau.dataTypeEnum.float
         },{
             id: "hospitalizedRate",
-            alias: "Hospitalized/100k",
+            alias: "Hospitalized/100k [C]",
             description: "Cumulative, and unique, hospitalisations per 100k",
             dataType: tableau.dataTypeEnum.float
         }, {
