@@ -439,7 +439,7 @@ th {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 310px auto auto;
+    grid-template-columns: 330px auto auto;
     background-color: #FFFFFF;
     padding: 10px;
 }
@@ -447,7 +447,7 @@ th {
 .grid-item .gamma .introduction .delta {
     border: 0 solid;
     text-align: left;
-    font-size: 75%;
+    font-size: 65%;
 }
 
 .grid-item {
@@ -455,7 +455,7 @@ th {
 }
 
 .gamma{
-    padding: 50px;
+    padding: 20px 5px 20px 5px; /* 50px; */
 }
 
 .delta{
@@ -494,9 +494,25 @@ since it must be aligned with the content */
 li {
     padding-bottom: 4px;
 }
-
 ul {
     padding-top: 4px;
 }
 
 
+
+dl {
+    display: block;
+    margin-left: 10px;
+}
+dt {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+dd {
+    display: block;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 13px;
+}
