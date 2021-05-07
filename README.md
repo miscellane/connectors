@@ -1,3 +1,3 @@
-### Connectors
+### Tableau
 
-Exploring cloud data connectors
+Exploring extraneous Tableau tools/connectors.
